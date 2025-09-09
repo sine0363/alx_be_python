@@ -1,7 +1,5 @@
-hours = 60
-count=0
-seconds = hours * hours
-hours1=count+1
+hours = 2
+seconds = 3600
 
-# 2 hour(s) is 7200 seconds.
-print(hours1,"2 hour(s) is", seconds , "seconds.")
+seconds = hours * 3600
+print(hours, "hour(s) is", seconds, "seconds.")
