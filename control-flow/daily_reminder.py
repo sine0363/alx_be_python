@@ -4,7 +4,7 @@
 while True:
     Task= input("Enter your task:")
     Priority = input("Priority (high/medium/low):")
-    Time_bound = input("Is it time-bound? (yes/no:)")
+    Time_bound = input("Is it time-bound? (yes/no):")
     match Priority:
         case "high":
             if Time_bound=="yes":
@@ -15,7 +15,7 @@ while True:
         case "low":
             if Time_bound=="no":
                 print(f"{Task} is a low priority task.Consider completing it when you have free time.")
-                break
+                
 
 
 
