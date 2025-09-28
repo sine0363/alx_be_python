@@ -13,11 +13,12 @@ def perform_operation (num1,num2,operation):
         return result2
     elif operation == "divide":
         if num2 == 0:
-            return "number cannot be divided by zero"
+            return "Division by zero is not allowed"
         result3 = num1/num2
         return result3
 
-    
+    else:
+        return "Unknown operation"
     
     
     
