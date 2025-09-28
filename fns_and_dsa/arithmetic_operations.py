@@ -1,7 +1,7 @@
 
 
  
-def perform_operation(num1 ,num2 ,operation):
+def perform_operation(num1, num2, operation):
 
     if operation == "add":
         result = num1 + num2
