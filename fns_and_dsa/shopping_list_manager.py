@@ -11,7 +11,7 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = input("Enter your choice:")
         
 
         if choice == '1':
