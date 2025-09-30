@@ -11,13 +11,16 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = int(input("Enter your choice: "))
+        choice = input("Enter your choice: ")
         
 
         if choice == '1':
-            add_item = input("Enter the item to add:")
-            shopping_list.append(add_item)
-            print(shopping_list)
+            try:
+                add_item = input("Enter the item to add:")
+                shopping_list.append(add_item)
+                print(shopping_list)
+            except ValueError:
+                print("Input is not a number")
             # Prompt for and add an item
             pass
         elif choice == '2':
