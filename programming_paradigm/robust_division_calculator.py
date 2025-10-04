@@ -1,24 +1,24 @@
-def divide(x,y):
+def  safe_divide (numerator, denominator):
 
-        if y==0:
+        if denominator==0:
             raise ZeroDivisionError("Error: Cannot divide by zero.")
-        return x/y
+        return numerator/numerator
 
 
 try:
-    print(divide(6,2))
+    print(safe_divide(6,2))
 except Exception as e:
      print(e)
 
     
 try:
-     print(divide(6,0))
+     print(safe_divide(6,0))
 
 except ZeroDivisionError as e:
     print(e)
 
 try:
-    print(divide("ten", 5))
+    print(safe_divide("ten", 5))
 
 
 except TypeError:
