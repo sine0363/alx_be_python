@@ -15,6 +15,7 @@ def safe_divide(numerator, denominator):
 # Test cases
 try:
     print(f"The result of the division is {safe_divide(6, 2)}")
+  
     
   
 except Exception as e:
@@ -29,3 +30,6 @@ try:
     print(safe_divide("ten", 5))
 except TypeError as e:
     print(e)
+
+
+ 
