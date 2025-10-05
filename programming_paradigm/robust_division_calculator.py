@@ -1,5 +1,5 @@
-def  safe_divide (numerator, denominator):
-
+def  safe_divide (numerator:float, denominator:float):
+        
         if denominator==0:
             raise ZeroDivisionError("Error: Cannot divide by zero.")
         return numerator/numerator
@@ -12,12 +12,15 @@ except Exception as e:
 
     
 try:
+     
      print(safe_divide(6,0))
 
 except ZeroDivisionError as e:
     print(e)
 
 try:
+    
+
     print(safe_divide("ten", 5))
 
 
