@@ -1,6 +1,6 @@
 def  safe_divide (numerator, denominator): 
         
-        if not isinstance (numerator,float) and not isinstance(denominator,float):
+        if not isinstance (numerator,float) or not isinstance(denominator,float):
              raise TimeoutError("Error: Please enter numeric values only.")
         
         if denominator==0:
