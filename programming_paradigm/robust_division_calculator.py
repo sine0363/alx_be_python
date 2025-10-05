@@ -1,4 +1,7 @@
-def  safe_divide (numerator:float, denominator:float):
+def  safe_divide (numerator, denominator): 
+        
+        if not isinstance (numerator,float) and not isinstance(denominator,float):
+             raise TimeoutError("Error: Please enter numeric values only.")
         
         if denominator==0:
             raise ZeroDivisionError("Error: Cannot divide by zero.")
@@ -24,9 +27,8 @@ try:
     print(safe_divide("ten", 5))
 
 
-except TypeError:
-    print  ("Error: Please enter numeric values only.")
-
+except TypeError as e:
+     print(e)
 
 
 
