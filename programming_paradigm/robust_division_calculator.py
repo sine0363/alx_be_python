@@ -1,6 +1,6 @@
 def safe_divide(numerator, denominator):
     try:
-        # Explicitly convert both to float (this is what your checker wants)
+    
         numerator = float(numerator)
         denominator = float(denominator)
     except ValueError:
@@ -14,7 +14,9 @@ def safe_divide(numerator, denominator):
 
 # Test cases
 try:
-    print(safe_divide(6, 2))
+    print(f"The result of the division is {safe_divide(6, 2)}")
+    
+  
 except Exception as e:
     print(e)
 
