@@ -11,10 +11,9 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        try:
-            choice = input("Enter your choice: ")
-        except ValueError:
-            print("Input is not a number")
+        
+        choice =( input("Enter your choice: "))
+        
         
 
         if choice == '1':
